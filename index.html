@@ -23,12 +23,23 @@
 					<p class="lead">
 						Stop swiping, start matching.  Stay in touch for when we launch - add your email below and be at the top of the list.
 					</p>
-					<form action="https://app.us17.list-manage.com/subscribe/post?u=c25a5fc007c0444693e71e5fc&amp;id=be8ec0e558" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form action="https://app.us17.list-manage.com/subscribe/post" method="POST">
 						<input
-							type="text"
+							type="hidden"
+							name="u"
+							value="c25a5fc007c0444693e71e5fc"
+						/>
+						<input
+							type="hidden"
+							name="id"
+							value="be8ec0e558"
+						/>
+						<input
+							type="email"
 							name="email"
 							id="email"
-							value=""
+							value
+							autocapitalize="off"
 							placeholder="Email Address"
 						/>
 						<div>
@@ -42,6 +53,11 @@
 							</button>
 						</div>
 						<p id="error">Please provide a valid email</p>
+						<input
+							type="hidden"
+							name="ht"
+							value="5be51b1e96b6a9af65578725d1d2866d316ed8af:MTY1ODg3OTUzOS44MzE="
+						/>
 					</form>
 				</div>
 			</main>
